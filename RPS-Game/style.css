@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    height: 100vh;
+    background-color: rgb(39, 41, 68);
+    /* font-family: sans-serif; */
+    letter-spacing: 1px;
+}
+
+.score {
+    color: rgb(224, 224, 224);
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.score h2 {
+    font-size: 30px;
+}
+
+.score p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.intro {
+    color: rgb(224, 224, 224);
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: opacity 0.5s ease;
+}
+
+.intro h1 {
+    font-size: 50px;
+}
+
+.intro button,
+.match button,
+.play-again {
+    width: 150px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: antiquewhite;
+    background: rgb(45, 117, 96);
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.match {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s ease 0.5s;
+}
+
+.winner {
+    color: antiquewhite;
+    text-align: center;
+    font-size: 50px;
+    height: 5vh;
+}
+
+.hands,
+.options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.player-hand {
+    transform: rotateY(180deg);
+}
+
+div.fadeOut {
+    opacity: 0;
+    pointer-events: none;
+}
+
+div.fadeIn {
+    opacity: 1;
+    pointer-events: all;
+}
+
+@keyframes shakePlayer {
+    0% {
+        transform: translateY(0px) rotateY(180deg);
+    }
+    15% {
+        transform: translateY(-30px) rotateY(180deg);
+    }
+    35% {
+        transform: translateY(0px) rotateY(180deg);
+    }
+    55% {
+        transform: translateY(-30px) rotateY(180deg);
+    }
+    75% {
+        transform: translateY(0px) rotateY(180deg);
+    }
+    85% {
+        transform: translateY(-30px) rotateY(180deg);
+    }
+    100% {
+        transform: translateY(0px) rotateY(180deg);
+    }
+}
+
+@keyframes shakeComputer {
+    0% {
+        transform: translateY(0px);
+    }
+    15% {
+        transform: translateY(-30px);
+    }
+    35% {
+        transform: translateY(0px);
+    }
+    55% {
+        transform: translateY(-30px);
+    }
+    75% {
+        transform: translateY(0px);
+    }
+    85% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.result {
+    height: 30vh;
+    position: absolute;
+    font-size: 30px;
+    color: antiquewhite;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s ease 0.5s;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
