@@ -8,5 +8,5 @@
 
 # Rock Paper Scissors #
 
-* Play this Game [here](https://nil1729.github.io/Javascript-Games-Desktop/RPS-Game/).
+* Play this Game [here](https://nil1729.github.io/Javascript-Games-Desktop/RPS-Game/index.html).
 
